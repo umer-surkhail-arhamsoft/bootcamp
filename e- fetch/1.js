@@ -1,5 +1,5 @@
-const fetchPromise = fetch('https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json');
+const fetchPromise = fetch('https://bootcamp.todo.arhamsoft.org/client/todo/list?userId=1');
 console.log(fetchPromise);
-fetchPromise.then((response) => {  console.log(`Received response: ${response.status}`); });
+fetchPromise.then((response) => {  console.log(`Received response: ${response.json()}`); });
 console.log("Started request…");
 
